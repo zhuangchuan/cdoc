@@ -1,4 +1,6 @@
-<div class="item" id="index" onmousewheel="alert(1);">
+<div id="left">
+</div>
+<div class="item" id="index">
   <div class="title">
     <h1>微信课件</h1>
     <span>讲师：陈朋举</span>
@@ -44,10 +46,41 @@
     var height = window.innerHeight;
     $(".item").css("height", height);
 
+    var count = $(".item").length;
+    for(var i=0; i < count; i++){
+      var title = $(".item").find("h2").html();
+      var html = "<div style='width:100%;height:"+height/count+"px;'></div>";
+      $("#left").append(html);
+    }
+
+    window.current = 1;
+    setInterval(function(){
+      var height = window.innerHeight;
+      var scrollTop = $("html,body").scrollTop();
+      var index = (scrollTop - (scrollTop % height)) / height;
+      var current = $("#left").children("div:eq("+index+")");
+      if(!current.css("background")){
+        $("#left").children("div").css("background","#3498DB");
+        current.css("background","#fff");
+      }
+    }, "10");
 
     var menu = $("#menu").children("div");
     for(var i=0; i < menu.length; i++){
       $(menu[i]).animate({left:"400px"}, "1000");
     }
+
+    $(".item").mousewheel(function(event){
+      //console.log(event.deltaX, event.deltaY, event.deltaFactor);
+      var windowHeight = window.innerHeight;
+      var height = $(this).offset().top;
+      if(event.deltaY < 0){
+        $("html,body").animate({scrollTop: height+windowHeight}, "2000");
+      }else{
+        $("html,body").animate({scrollTop: height-windowHeight}, "2000");
+      }
+    })
+
+
   })
 </script>

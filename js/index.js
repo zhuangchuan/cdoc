@@ -13,8 +13,3 @@ function page(e){
 
   $("html,body").animate({scrollTop: height}, 1000);
 }
-
-function page2(){
-  alert(1);
-  return false;
-}

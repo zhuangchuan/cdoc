@@ -5,6 +5,20 @@ body {
     padding: 0;
     margin: 0;
 }
+#left {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+}
+#left > div {
+    background: #3498DB;
+    border-bottom:1px solid #eee;
+}
+#left > div .current {
+    background: #fff;
+}
 h2 {
     font-size: 40px;
     color: #fff;
@@ -28,6 +42,7 @@ h2 {
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 #menu > div {
     font-size: 30px;
