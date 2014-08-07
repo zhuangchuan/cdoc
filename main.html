@@ -1,0 +1,53 @@
+<div class="item" id="index" onmousewheel="alert(1);">
+  <div class="title">
+    <h1>微信课件</h1>
+    <span>讲师：陈朋举</span>
+  </div>
+  <div id="menu">
+    <div href="#item0" onClick="page(this)">微信公众帐号</div>
+    <div href="#item1" onClick="page(this)">微信接口功能展示</div>
+    <div href="#item2" onClick="page(this)">微信开发者中心</div>
+  </div>
+</div>
+<div class="item" id="item0">
+  <div class="box">
+    <h2>微信概述</h2>
+    <div class="test">
+      <p>曾命名为“官号平台”和“媒体平台”，最终定位为“公众平台”，无疑让我们看到一个微信对后续更大的期望。和新浪微博早期从明星战略着手不同，微信此时已经有了亿级的用户，挖掘自己用户的价值，为这个新的平台增加更优质的内容，创造更好的粘性，形成一个不一样的生态循环，是平台发展初期更重要的方向。利用公众账号平台进行自媒体活动，简单来说就是进行一对多的媒体性行为活动，如商家通过申请公众微信服务号可以展示商家微官网、微会员、微推送、微支付、微活动，微报名，微分享、微名片等，已经形成了一种主流的线上线下微信互动营销方式。</p>
+    </div>
+  </div>
+</div>
+<div class="item" id="item1">
+  <div class="box">
+    <h2>微信接口展示</h2>
+    <ul>
+      <li>关注事件回复</li>
+      <li>文本回复</li>
+      <li>图文回复</li>
+      <li>自定义菜单</li>
+    </ul>
+  </div>
+</div>
+<div class="item" id="item2" scrollTop="0">
+  <div class="box">
+    <h2>微信项目案例</h2>
+    <ul>
+      <li>同音早教</li>
+      <li>世纪情缘</li>
+      <li>微信抽奖签到</li>
+    </ul>
+  </div>
+</div>
+<script>
+  $(function(){
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    $(".item").css("height", height);
+
+
+    var menu = $("#menu").children("div");
+    for(var i=0; i < menu.length; i++){
+      $(menu[i]).animate({left:"400px"}, "1000");
+    }
+  })
+</script>
