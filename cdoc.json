@@ -1,0 +1,44 @@
+{
+  "title":"微信课件",
+  "description": "微信介绍",
+  "keyword": "微信，PPT，HTML，公众平台",
+  "content": [
+    {
+      "title": "微信公众平台接口开发",
+      "content": ""
+    },
+    {
+      "title": "概念介绍",
+      "content": "<img title='陈坤' src='images/chenkun.jpg'><ul style='float:right;width:300px;'><li>一对多的媒体性行为活动</li><li>如商家通过基于微信公众平台对接的转介率微信会员营销系统展示商家微官网、微会员、微推送、微支付、微活动，已经形成了一种主流的线上线下微信互动营销方式</li></ul>"
+    },
+    {
+      "title": "订阅号",
+      "content": "<ul><li>每天（24小时内）可以发送1条群发消息</li><li>发给粉丝的消息，将会显示在对方的“订阅号”文件夹中</li><li>在订阅用户（粉丝）的通讯录中，订阅号将被放入订阅号文件夹中</li><li>个人申请，只能申请订阅号</li>"
+    },
+    {
+      "title": "服务号",
+      "content": "<ul><li>1个月（自然月）内仅可以发送4条群发消息</li><li>发给粉丝的消息，会显示在对方的聊天列表中</li><li>服务号可申请高级接口</li></ul>"
+    },
+    {
+      "title": "微信接口展示",
+      "content": "微信接口展示。。。"
+    },
+    {
+      "title": "案例展示",
+      "content": "微信案例展示。。。"
+    },
+    {
+      "title": "微信展望",
+      "content": "<ul><li>微信会员微信的优势就是绝对的会员机制</li><li>只要你关注了公众帐号，就是帐号的会员</li>会员的行为记录从简单的微信行为，如关注，取消关注，发送关键字，点击菜单。到网站的用户行为，如访问，收藏，评论，购买等会员的行为记录，整理，分析，应用.微信身份,只要用户通过微信扫码，便可确定用户的身份。类似与指纹验证, 比如签到等"
+    },
+    {
+      "title": "开发团队",
+      "img": "img/coldmaker.jpg",
+      "content": "团队组成。。。"
+    },
+    {
+      "title": "谢谢收看",
+      "content": "<ul><li><bold style='padding-right:15px;'>QQ</bold>851094759</li><li><bold style='padding-right:15px;'>Email</bold>orangechen.1991@gami.com</li><li><bold style='padding-right:15px;'>Website</bold>www.thinklancer.com</li></ul><p style='text-align:right;display:block;margin-top:300px;'>By ColdMader</p>"
+    }
+  ]
+}
