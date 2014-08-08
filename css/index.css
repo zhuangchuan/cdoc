@@ -1,6 +1,6 @@
 body {
     font-family: "微软雅黑";
-    background: #057291;
+    //background: #057291;
     color: #fff;
     padding: 0;
     margin: 0;
@@ -23,7 +23,13 @@ body {
 #left > div .current {
     background: #fff;
 }
-
+#main > img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
 /** 网站主体 **/
 .item {
     color: #fff;
@@ -46,9 +52,6 @@ body {
 .content {
     text-align: left;
     padding: 100px 200px;
-}
-.content img {
-    width: 300px;
 }
 @keyframes menu {
     from {width: 100%;}
@@ -73,10 +76,10 @@ body {
     margin: 5px 0;
 }
 #menu > li:hover {
-    //animation: menu 0.2s;
-    //-moz-animation: menu 0.2s;
-    -webkit-animation: menu 0.2s;
-    -o-animation: menu 0.2s;
+    /* animation: menu 0.2s; */
+    /* -moz-animation: menu 0.2s; */
+    /* -webkit-animation: menu 0.2s; */
+    /* -o-animation: menu 0.2s; */
 }
 #menu > li > span {
     background: #7D3846;

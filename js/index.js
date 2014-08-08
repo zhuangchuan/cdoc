@@ -83,10 +83,10 @@ $(function(){
     var height = window.innerHeight;
     var scrollTop = $("html,body").scrollTop(); //当前item距离屏幕上边的距离
     var index = (scrollTop - (scrollTop % height)) / height; //当前item索引值
-    if(e && e.keyCode==40){ // down 键
+    if(e && e.keyCode==38){ // down 键
+      $("html,body").animate({scrollTop: scrollTop - (height + scrollTop % height)}, "2000");
+    }else if(e && e.keyCode == 40){ // up
       $("html,body").animate({scrollTop: scrollTop + (height - scrollTop % height)}, "2000");
-    }else if(e && e.keyCode == 38){ // up
-      $("html,body").animate({scrollTop: scrollTop + scrollTop % height }, "2000");
     }
   }
 
