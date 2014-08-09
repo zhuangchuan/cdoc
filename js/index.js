@@ -6,8 +6,9 @@ $(function(){
   });
 
   /** 设置页面数据 **/
+  var width = window.innerWidth;
   var height = window.innerHeight;
-  $("body").css("background-size", "100% "+height+"px");
+  $("#main img").css("height", height);
   $.getJSON("cdoc.json", function(result){
     $("title").html(result.title);
 
@@ -16,7 +17,7 @@ $(function(){
       var item = result.content[i];
       var html = "<div class='item' id='item"+i+"' style='height:"+height+"px;'><div class='title'>";
       html += "<h1>"+item.title+"</h1></div>";
-      html += "<div class='content'>"+item.content+"</div></div>";
+      html += "<div class='content' style='padding:"+height*0.1+"px "+width*0.1+"px;'>"+item.content+"</div></div>";
       var nav = "<div style='width:100%;height:"+height/result.content.length+"px;' title="+item.title+" href='#item"+i+"' onClick='page(this)'></div>";
       if(i!=0){
         menu += "<li href='#item"+i+"' onClick='page(this)'><span>"+i+"</span>"+item.title+"</li>";
@@ -56,8 +57,8 @@ $(function(){
     var index = (scrollTop - other) / height;
     var current = $("#left").children("div:eq("+index+")");
     if(!current.css("background")){
-      $("#left").children("div").css("background","#3498DB");
-      current.css("background","#fff");
+      $("#left").children("div").css("background","#526D39");
+       current.css("background","#CEC9AB");
     }
   }, "10");
 

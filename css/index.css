@@ -17,28 +17,26 @@ body {
     width: 20px;
 }
 #left > div {
-    background: #071927;
     border-bottom:1px solid #eee;
 }
-#left > div .current {
-    background: #fff;
-}
 #main > img {
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     z-index: -1;
+    height: 600px;
 }
 /** 网站主体 **/
 .item {
-    color: #fff;
-    width: 80%;
-    margin: 0;
-    padding: 0 50px;
+    color: #2B4430;
+    font-weight: 800;
+    margin: 0 50px;
     overflow: hidden;
 }
 .title {
+    margin-left: -150px;
     position: relative;
     top: 50px;
     text-align: center;
@@ -50,6 +48,7 @@ body {
     color: #fff;
 }
 .content {
+    margin-left: -30px;
     text-align: left;
     padding: 100px 200px;
 }
@@ -71,7 +70,8 @@ body {
 }
 #menu > li {
     display: inline-block;
-    background: #382F4D;
+    background: #729045;
+    border-radius: 40px;
     width: 100%;
     margin: 5px 0;
 }
@@ -88,4 +88,16 @@ body {
     display: inline-block;
     width: 35px;
     text-align: center;
+}
+.circle {
+    border: 2px solid #A2D1E7;
+    border-radius: 150px;
+    //background: #664D49;
+    //opacity: 0.5;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    position: relative;
+    float:left;
 }
