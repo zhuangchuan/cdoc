@@ -21,7 +21,7 @@
     },
     {
       "title": "微信接口",
-      "content": "<ul><li>关注回复</li><li>文本回复</li><li>图文回复</li><li>自定义菜单</li><li>获取会员信息</li><li>获取用户地理位置</li><li>微信客服</li><li>微信支付</li><li>微信小店</li></ul>"
+      "content": "<ul style='width:40%'><li href='div1'>关注回复</li><li>文本回复</li><li>图文回复</li><li>自定义菜单</li><li>获取会员信息</li><li>获取用户地理位置</li><li>微信客服</li><li>微信支付</li><li>微信小店</li></ul><div style='width:40%;float:right;display:none;'><div sign='div1'>当用户关注帐号时，自动回复一条消息</div></div>"
     },
     {
       "title": "案例展示",
@@ -29,7 +29,7 @@
     },
     {
       "title": "发展前景",
-      "content": "<ul><li>微信会员</li><li>会员行为记录</li><li>微信身份</li><li>区域服务</li></ul>"
+      "content": "<ul><li style='border-bottom:1px solid #eee;border-left:2px solid #3498DB;padding-left:20px;'><p style=''>微信会员</p><p style='margin-left:20px;'>微信的特点之一就是，只要客户关注了帐号，就是帐号的会员</p></li><li style='border-bottom:1px solid #eee;border-left:2px solid #3498DB;padding-left:20px;'><p style=''>会员行为记录</p><p style='margin-left:20px;'>客户在帐号里面的所有行为都可以被轻松记录，分析，处理</p></li><li style='border-bottom:1px solid #eee;border-left:2px solid #3498DB;padding-left:20px;'><p style=''>微信身份</p><p style='margin-left:20px;'>使用微信扫描可以替代指纹等的身份验证方式，</p></li><li style='border-bottom:1px solid #eee;border-left:2px solid #3498DB;padding-left:20px;'><p style=''>区域服务</p><p style='margin-left:20px;'>可以根据客户的地理位置为用户提供区域化的服务</p></li></ul>"
     },
     {
       "title": "开发团队",
